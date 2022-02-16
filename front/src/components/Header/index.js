@@ -19,13 +19,16 @@ const Index = () => {
                     <NavLink to='/categories' activeStyle>
                         <img className="logo_transparente" src="assets/logo.png" />
 
-                        Categories
+                        All Categories
                     </NavLink>
                     <NavLink to='/profile' activeStyle>
                         My Profile
                     </NavLink>
 
                 </NavMenu>
+                <NavBtn>
+                    <NavBtnLink to='/new'>+ Create ad </NavBtnLink>
+                </NavBtn>
 
             </Nav>
         </>
