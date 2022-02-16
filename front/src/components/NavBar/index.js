@@ -16,10 +16,10 @@ const Index = () => {
 
                 <NavMenu>
                     <NavLink to='/categories' activeStyle>
-                        About
+                        Categories
                     </NavLink>
                     <NavLink to='/profile' activeStyle>
-                        Events
+                        Profile
                     </NavLink>
 
                 </NavMenu>
