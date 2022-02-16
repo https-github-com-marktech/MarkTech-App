@@ -1,13 +1,18 @@
 import sqlite3
 
+# MODEL
+
 class Product:
-    def __init__(self, id, name, description, image, price, contact):
+    def __init__(self, id, name, description, image, price, contact, location, features, key_words):
         self.id = id
         self.name = name
         self.description = description
         self.image = image
         self.price = price
         self.contact = contact
+        self.location = location
+        self.features = features
+        self.key_words = key_words
 
     def to_dict(self):
         return {
@@ -17,6 +22,10 @@ class Product:
             "image": self.image,
             "price": self.price,
             "contact": self.contact,
+            "location": self.location,
+            "features": self.features,
+            "key_words": self.key_words,
+
         }
 
 class ProductsRepository:
@@ -37,7 +46,10 @@ class ProductsRepository:
                 description text,
                 image blob,
                 price real,
-                contact text
+                contact text,
+                location text,
+                features text,
+                key_words text,
             )
             """
         conn = self.create_conn()
@@ -59,8 +71,8 @@ class ProductsRepository:
         return result
 
     def save(self, product):
-        sql = """insert into products (id,name,description,price,contact,image) values (
-            :id, :name, :description, :price, :contact , :image
+        sql = """insert into products (id,name,description,price,contact,image, location, features, key_words) values (
+            :id, :name, :description, :price, :contact, :image, :location, :features, :key_words
         ) """
         conn = self.create_conn()
         cursor = conn.cursor()

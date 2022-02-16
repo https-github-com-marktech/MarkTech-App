@@ -3,6 +3,7 @@ from flask_cors import CORS
 from src.domain.product import Product
 from src.lib.utils import object_to_json
 
+# ROUTER / CONTROLLER
 
 def create_app(repositories):
     app = Flask(__name__)
