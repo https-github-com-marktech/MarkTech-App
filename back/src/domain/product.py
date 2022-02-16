@@ -1,6 +1,5 @@
 import sqlite3
 
-
 class Product:
     def __init__(self, id, name, description, image, price, contact):
         self.id = id
@@ -19,7 +18,6 @@ class Product:
             "price": self.price,
             "contact": self.contact,
         }
-
 
 class ProductsRepository:
     def __init__(self, database_path):
