@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35253840-4c17-41ab-b20b-93883e1203b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/assets/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavbarElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/NavbarElements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NavBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/NavbarElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/NavbarElements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NavBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/images/logo_01.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Categories.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pages/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,13 +23,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/App.js" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="25CJ2Ai2yDLZchWIgbOwI1LySs4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -42,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645024924908</updated>
       <workItem from="1645024926568" duration="2102000" />
-      <workItem from="1645027093400" duration="9711000" />
+      <workItem from="1645027093400" duration="13912000" />
     </task>
     <servers />
   </component>
@@ -59,5 +70,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

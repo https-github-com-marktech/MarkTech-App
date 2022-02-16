@@ -5,7 +5,7 @@ const Categories = () => {
         <div
 
         >
-            <h1>Welcome to GeeksMarket</h1>
+            <h1>Categories</h1>
         </div>
     );
 };
