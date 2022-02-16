@@ -1,7 +1,7 @@
 import { Routes, Route,BrowserRouter } from "react-router-dom" ;
 import React from "react";
 import App from "../App";
-import Show from "../views/Show";
+import Showproduct from "../views/Showproduct";
 import Landing from "../views/Landing";
 
 
@@ -10,7 +10,7 @@ function Router() {
     <BrowserRouter> 
       <Routes>
       <Route path="/" element={<Landing/>} />
-      <Route path="/show/:id" element={<Showproduct />} />
+      <Route path="/show/:id" element={<Showproduct/>} />
       </Routes> 
     </BrowserRouter>
 )
