@@ -15,7 +15,10 @@ const Index = () => {
                 <Bars />
 
                 <NavMenu>
+
                     <NavLink to='/categories' activeStyle>
+                        <img src="images/logo_01.png"/>
+
                         Categories
                     </NavLink>
                     <NavLink to='/profile' activeStyle>
