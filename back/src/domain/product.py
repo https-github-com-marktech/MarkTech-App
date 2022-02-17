@@ -1,7 +1,6 @@
 from itertools import product
 import sqlite3
 
-
 class Product:
     def __init__(self, name, description, price, image, contact, id):
         self.name = name
@@ -20,7 +19,6 @@ class Product:
             "image": self.image,
             "contact": self.contact,
         }
-
 
 class ProductRepository:
     def __init__(self, databasepath):
@@ -67,6 +65,7 @@ class ProductRepository:
         conn = self.create_conn()
         cursor = conn.cursor()
         cursor.execute(sql, product.to_dict())
+        conn.commit()
 
     def get_products_by_id(self, id):
         sql = """select * from products where id=:id"""
@@ -78,4 +77,3 @@ class ProductRepository:
         product = Product(**data)
         return product
 
-        conn.commit()

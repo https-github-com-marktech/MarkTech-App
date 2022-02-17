@@ -9,7 +9,7 @@ def test_should_return_empty_list_of_product():
 
     # ARRANGE
     products_repository = ProductRepository(temp_file())
-    app = create_app(repositories={"event": products_repository})
+    app = create_app(repositories={"product": products_repository})
     client = app.test_client()
 
     # ACT
