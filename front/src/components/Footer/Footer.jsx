@@ -1,5 +1,6 @@
 import React from 'react'
 import './footer.css'
+import Facebook from '../images/facebook.png'
 
 function Footer() {
   return (
@@ -31,6 +32,7 @@ function Footer() {
             <div className='Social'>
               <h4>Follow us  </h4>
                 <div className='social-links' >
+                <a  href='https://www.facebook.com/' ><img className='facebook' alt="facebook" src= {Facebook}/></a>
                 </div>
             </div>
           </div>
