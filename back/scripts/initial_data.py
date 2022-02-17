@@ -126,6 +126,14 @@ def main():
     product_repository.save(producto_2)
     product_repository.save(producto_3)
     product_repository.save(producto_4)
+    product_repository.save(producto_5)
+    product_repository.save(producto_6)
+    product_repository.save(producto_7)
+    product_repository.save(producto_8)
+    product_repository.save(producto_9)
+    product_repository.save(producto_10)
+    product_repository.save(producto_11)
+    product_repository.save(producto_12)
 
 
 if __name__ == "__main__":
