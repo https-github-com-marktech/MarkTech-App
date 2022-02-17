@@ -1,31 +1,22 @@
 import "../Product/Product.module.css";
+import Laptop from '../images/laptop-33521_1280.png'
 
-export function Productcard(props) {
+function Productcard( props ) {
   return (
-    <main>
-      <div className="bigcontainer">
-          <div className="ContainerProduct">
-              <div >
-                  <img className="imgproduct" src={props.product.image} alt={props.product.name}/>
-              </div>
-
-              <div className="textproduct">
-                  <p>{props.product.name}</p>
-              </div>
-              
-              <div className="price">
-                  {" "}
-                  <p>{props.product.price}</p>
-              </div>
-              <div className="description">
-                  <p> {props.product.description}</p>
-              </div>
-          </div>
-
-        
-
+  
+    <div className="container">
+      <div className='card'>     
+        <div className='cardImgBox'>
+        <img className='cardImg' src= {props.img}></img>
         </div>
-      
-    </main>
-  );
+        <h3 className='cardTitle'>{props.nombre}</h3>
+        <p>{props.descripcion}</p>
+        <p>{props.precio}</p>
+        <p>{props.solicitudComprador}</p>
+        
+      </div>
+    </div>
+  )
 }
+
+export default Productcard

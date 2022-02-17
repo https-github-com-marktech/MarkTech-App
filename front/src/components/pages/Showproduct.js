@@ -1,4 +1,4 @@
-/* import "../App.css";
+import "../App.css";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import Productcard from "../components/Product/Productcard";
@@ -13,4 +13,4 @@ const Showproduct = () => {
     );
 };
 
-export default Showproduct; */
+export default Showproduct;
