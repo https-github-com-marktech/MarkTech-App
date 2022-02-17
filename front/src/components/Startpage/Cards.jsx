@@ -14,7 +14,7 @@ return (
 <p>{props.descripcion}</p>
 <p className='cardPrice'>{props.precio}</p>
 <p>{props.solicitudComprador}</p>
-<button className='cardButton'><a href='/Showproduct'>See more</a></button>
+<a href='/Showproduct'><button className='cardButton'>See more</button></a>
 </div>
 
 )
