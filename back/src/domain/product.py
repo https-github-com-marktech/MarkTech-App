@@ -1,42 +1,44 @@
+from itertools import product
 import sqlite3
 
+
 class Product:
-    def __init__(self, id, name, description, image, price, contact):
-        self.id = id
+    def __init__(self, name, description, price, image, contact, id):
         self.name = name
         self.description = description
-        self.image = image
         self.price = price
+        self.image = image
         self.contact = contact
+        self.id = id
 
     def to_dict(self):
         return {
             "id": self.id,
             "name": self.name,
             "description": self.description,
-            "image": self.image,
             "price": self.price,
+            "image": self.image,
             "contact": self.contact,
         }
 
-class ProductsRepository:
-    def __init__(self, database_path):
-        self.database_path = database_path
+
+class ProductRepository:
+    def __init__(self, databasepath):
+        self.databasepath = databasepath
         self.init_tables()
 
     def create_conn(self):
-        conn = sqlite3.connect(self.database_path)
+        conn = sqlite3.connect(self.databasepath)
         conn.row_factory = sqlite3.Row
         return conn
 
     def init_tables(self):
-        sql = """
-            create table if not exists products (
+        sql = """create table if not exists products (
                 id varchar PRIMARY KEY,
                 name text,
                 description text,
-                image blob,
                 price real,
+                image blob,
                 contact text
             )
             """
@@ -46,7 +48,7 @@ class ProductsRepository:
         conn.commit()
 
     def get_product(self):
-        sql = """select * from products"""
+        sql = """ select * from products"""
         conn = self.create_conn()
         cursor = conn.cursor()
         cursor.execute(sql)
@@ -59,11 +61,20 @@ class ProductsRepository:
         return result
 
     def save(self, product):
-        sql = """insert into products (id,name,description,price,contact,image) values (
-            :id, :name, :description, :price, :contact , :image
+        sql = """insert into products (id,name,description,image,price,contact) values (
+            :id, :name, :description, :image, :price, :contact
         ) """
         conn = self.create_conn()
         cursor = conn.cursor()
         cursor.execute(sql, product.to_dict())
-
         conn.commit()
+
+    def get_products_by_id(self, id):
+        sql = """select * from products where id=:id"""
+        conn = self.create_conn()
+        cursor = conn.cursor()
+        cursor.execute(sql, {"id": id})
+
+        data = cursor.fetchone()
+        product = Product(**data)
+        return product

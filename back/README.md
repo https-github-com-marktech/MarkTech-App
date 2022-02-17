@@ -1,4 +1,4 @@
-# Aplicación events-list (backend)
+# Aplicación semilla (backend)
 
 ## Puesta en marcha
 
