@@ -1,4 +1,4 @@
-import "../Product/Product.module.css";
+import "./product.module.css";
 import Laptop from '../images/laptop-33521_1280.png'
 
 function Productcard(props) {
@@ -10,7 +10,7 @@ function Productcard(props) {
           <img className='cardImg' src={props.img}></img>
         </div>
         <h3 className='cardTitle'>{props.nombre}</h3>
-        <p>{props.descripcion}</p>
+        <p className="cardDescription">{props.descripcion}</p>
         <p>{props.precio}</p>
         <p>{props.solicitudComprador}</p>
 
