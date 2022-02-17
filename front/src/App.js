@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Profile from "./components/pages/Profile";
 import Gridproducts from "./components/Startpage/Gridproducts";
 import Productcard from "./components/Product/Productcard";
+import Home from "./components/pages/Home";
 
 function App() {
   return (
