@@ -1,10 +1,17 @@
-/* import "./product.module.css";
+import "./product.module.css";
+import "../Product/product.module.css";
 // import Laptop from '../images/laptop-33521_1280.png'
+/* import { useParams } from "react-router-dom";
+ */// import { getProductId } from "../../service/productService";
 
 function Productcard(props) {
-  return (
 
+/*   let id = useParams();
+ */    
+  return (
     <div className="container">
+       {/*  <h1>id es {props.product.id}</h1> 
+        <p> {id} </p> */}
       <div className='card'>
         <div className='cardImgBox'>
         <img className='cardImg' src= {props.img} alt={props.name}></img>
@@ -16,17 +23,17 @@ function Productcard(props) {
 
       </div>
     </div>
+
   )
 }
 
 export default Productcard
- */
 
-
-import "../Product/Product.module.css";
-// import { useEffect} from "react";
+/* 
+import "../Product/product.module.css";
+import { useEffect} from "react";
 import { useParams } from "react-router-dom";
-// import { getProductId } from "../../service/productService";
+import { getProductId } from "../../service/productService";
 
 function Productcard(props) {
 
@@ -40,3 +47,4 @@ function Productcard(props) {
 }
 
 export default Productcard
+ */

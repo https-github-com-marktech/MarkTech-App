@@ -10,9 +10,9 @@
 }
 
 .btitulo{
-font-family: 'Fredoka One', cursive;
-margin: 50px 0 10px 0;
-background-color: red;
+    font-family: 'Fredoka One', cursive;
+    margin: 50px 0 10px 0;
+    background-color: red;
 }
 
 .bcard{
@@ -22,17 +22,16 @@ background-color: red;
     margin: 3%;
     border-radius: 2%;
     box-shadow: 1px 1px 10px gray;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
+
 .bcard:hover{
     background-color: var(--blueDark);
     opacity: 0.9;
     color: var(--white);
     background-color: red;
-
-
 }
+
 .bCardBox{
     width: 10%;
     display: flex;
@@ -40,8 +39,6 @@ background-color: red;
     flex-wrap: wrap; 
     box-shadow:   0 4px 16px -10px gray;
     background-color: red;
-
-
 }
 
 .bCardImgBox{
@@ -59,13 +56,12 @@ background-color: red;
 
 .bcardTitle{
     font-family: 'Montserrat', sans-serif;
-
-
 }
 
 .bcardPrice{
     font-weight: 600;
 }
+
 .bcardPrice:hover{
     color:red;
     font-size: 1.5rem;

@@ -18,7 +18,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/Profile" component={Profile} />
           <Route path="/Categories" component={Gridproducts} />
-          <Route path="/Showproduct/{id}" component={Productcard1} />
+          <Route path="/Showproduct/:id" render={Productcard1} /> 
         </Switch>
       </Router>
       <Footer/>
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App;
+

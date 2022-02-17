@@ -1,16 +1,19 @@
 import "../App.css";
-import { Header } from "../components/Header";
+/* import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import Productcard from "../components/Product/Productcard";
+import Productcard from "../components/Product/Productcard"; */
 
 const Showproduct = () => {
     return (
         <div>
-            <Header/>
-            <Productcard />
-            <Footer />
+            <h1>Helloo</h1>
         </div>
     );
 };
 
 export default Showproduct;
+
+
+/* <Header/>
+            <Productcard />
+            <Footer /> */

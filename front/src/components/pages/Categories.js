@@ -2,9 +2,7 @@ import React from 'react';
 
 const Categories = () => {
     return (
-        <div
-
-        >
+        <div>
             <h1>Categories</h1>
         </div>
     );
