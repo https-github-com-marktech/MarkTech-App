@@ -19,7 +19,7 @@ function App() {
           <Route path="/Profile" component={Profile} />
           <Route path="/Categories" component={Gridproducts} />
           <Route path="/Showproduct" component={Productcard1} />
-        </Switch>
+        </Switch>np
       </Router>
       <Footer/>
     </div>
