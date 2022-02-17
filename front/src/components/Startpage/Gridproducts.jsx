@@ -15,7 +15,7 @@ function Gridproducts() {
 
   useEffect(() => {
     getAllProducts().then((resp) => setProducts(resp));
-  })
+  }, []);
 
   return (
     <div className='container'>
@@ -32,5 +32,6 @@ function Gridproducts() {
     </div>
   )
 }
+
 
 export default Gridproducts

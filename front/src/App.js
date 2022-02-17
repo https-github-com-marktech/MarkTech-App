@@ -16,7 +16,7 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/Profile" component={Profile} />
           <Route path="/Categories" component={Gridproducts} />
-          <Route path="/Showproduct" component={Productcard} />
+          <Route path="/Showproduct/{id}" component={Productcard} />
         </Switch>
       </Router>
     </div>
