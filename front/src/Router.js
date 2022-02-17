@@ -1,4 +1,4 @@
-import { Routes, Route,BrowserRouter } from "react-router-dom" ;
+/* import { Routes, Route,BrowserRouter } from "react-router-dom" ;
 import React from "react";
 import App from "../App";
 import Showproduct from "../views/Showproduct";
@@ -15,4 +15,4 @@ function Router() {
     </BrowserRouter>
 )
 }
-export default Router; 
+export default Router;  */

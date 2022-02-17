@@ -3,21 +3,21 @@ import './gridproducts.css'
 
 
 function Cards( props ) {
-  return (
-  
+return (
 
-      <div className='card'>     
-        <div className='cardImgBox'>
-        <img className='cardImg' src= {props.img}></img>
-        </div>
-        <h3 className='cardTitle'>{props.nombre}</h3>
-        <p>{props.descripcion}</p>
-        <p className='cardPrice'>{props.precio}</p>
-        <p>{props.solicitudComprador}</p>
-        <button className='cardButton'><a href='/Profile'>See more</a></button>
-      </div>
 
-  )
+<div className='card'> 
+<div className='cardImgBox'>
+<img className='cardImg' src= {props.img}></img>
+</div>
+<h3 className='cardTitle'>{props.nombre}</h3>
+<p>{props.descripcion}</p>
+<p className='cardPrice'>{props.precio}</p>
+<p>{props.solicitudComprador}</p>
+<button className='cardButton'><a href='/Showproduct'>See more</a></button>
+</div>
+
+)
 }
 
-export default Cards
+export default Cards 
