@@ -7,6 +7,8 @@ import {
     NavBtn,
     NavBtnLink,
 } from './NavbarElements';
+import {Route} from "react-router-dom";
+import Form from "../Form";
 
 const Index = () => {
     return (
@@ -27,7 +29,8 @@ const Index = () => {
 
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/CreateForm'>+ Create ad </NavBtnLink>
+                    <NavBtnLink to='/createAd'>+ Create Ad </NavBtnLink>
+
                 </NavBtn>
 
             </Nav>

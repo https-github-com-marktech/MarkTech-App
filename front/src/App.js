@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./App.css";
 import Navbar from "./components/Header";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -6,9 +6,15 @@ import Profile from "./components/pages/Profile";
 import Gridproducts from "./components/Startpage/Gridproducts";
 import Productcard from "./components/Product/Productcard";
 import Home from "./components/pages/Home";
+import Form from "./components/Form";
+
+
 
 function App() {
+
+
   return (
+
     <div className="App">
       <Router>
         <Navbar />
@@ -17,8 +23,10 @@ function App() {
           <Route path="/Profile" component={Profile} />
           <Route path="/Categories" component={Gridproducts} />
           <Route path="/Showproduct" component={Productcard} />
+          <Route path="/CreateAd" component={Form} />
         </Switch>
       </Router>
+
     </div>
   );
 }
