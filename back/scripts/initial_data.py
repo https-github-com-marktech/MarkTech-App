@@ -9,35 +9,35 @@ def main():
 
     producto_1 = Product(
         id="product-1",
-        name="producto queen",
-        description="un tributo a queen",
+        name="television plasma",
+        description="Esta es la mejor television de plasma que te vas ha encontrar en el mercado",
         image="https://picsum.photos/200/300",
-        contact=False,
-        price="22:00",
+        contact="peterstevenson@ggmail.yes",
+        price="1500.00",
     )
     producto_2 = Product(
         id="Product-2",
-        name="producto iker",
-        description="un tributo a iker",
+        name="monitor de plasma",
+        description="Este es el mejor monitor de plasma que te vas ha encontrar en el mercado",
         image="https://picsum.photos/200/300",
-        contact=False,
-        price="23:00",
+        contact="martinstevenson@ggmail.yes",
+        price="500.00",
     )
     producto_3 = Product(
         id="Product-3",
-        name="producto camelia",
-        description="un tributo a camelia",
+        name="Ordenador de plasma",
+        description="Este es el mejor ordeandor de plasma que te vas ha encontrar en el mercado",
         image="https://picsum.photos/200/300",
-        contact=False,
-        price="21:00",
+        contact="peterrobinson@ggmail.yes",
+        price="1500.00",
     )
     producto_4 = Product(
         id="Product-4",
-        name="producto ainara",
-        description="un tributo a ainara",
+        name="raton de plasma",
+        description="Este es el mejor plasma de plasma que te vas ha encontrar en el mercado",
         image="https://picsum.photos/200/300",
-        contact=False,
-        price="17:00",
+        contact="martinrobinson@ggmail.yes",
+        price="50.00",
     )
     product_repository = ProductRepository(database_path)
     product_repository.save(producto_1)
@@ -48,5 +48,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-  
