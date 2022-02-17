@@ -1,0 +1,30 @@
+.facebook {
+    width: 1000px;
+    background-color: aqua;
+}
+.container{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 556px;
+}
+
+.company {
+
+}
+
+.Customers {
+
+}
+
+.Information{
+
+
+}
+
+.Social{
+
+}
+
+
