@@ -11,7 +11,7 @@ def main():
         id="product-1",
         name="producto queen",
         description="un tributo a queen",
-        image="2022-01-25",
+        image="https://picsum.photos/200/300",
         contact=False,
         price="22:00",
     )
@@ -19,7 +19,7 @@ def main():
         id="Product-2",
         name="producto iker",
         description="un tributo a iker",
-        image="2022-01-26",
+        image="https://picsum.photos/200/300",
         contact=False,
         price="23:00",
     )
@@ -27,7 +27,7 @@ def main():
         id="Product-3",
         name="producto camelia",
         description="un tributo a camelia",
-        image="2022-01-27",
+        image="https://picsum.photos/200/300",
         contact=False,
         price="21:00",
     )
@@ -35,7 +35,7 @@ def main():
         id="Product-4",
         name="producto ainara",
         description="un tributo a ainara",
-        image="2022-01-28",
+        image="https://picsum.photos/200/300",
         contact=False,
         price="17:00",
     )
