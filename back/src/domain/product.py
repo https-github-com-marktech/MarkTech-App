@@ -3,9 +3,10 @@ import sqlite3
 
 
 class Product:
-    def __init__(self, name, description, price, image, contact, id):
+    def __init__(self, name, description, features, price, image, contact, id):
         self.name = name
         self.description = description
+        self.features = features
         self.price = price
         self.image = image
         self.contact = contact
@@ -16,6 +17,7 @@ class Product:
             "id": self.id,
             "name": self.name,
             "description": self.description,
+            "features": self.features,
             "price": self.price,
             "image": self.image,
             "contact": self.contact,
@@ -37,6 +39,7 @@ class ProductRepository:
                 id varchar PRIMARY KEY,
                 name text,
                 description text,
+                features text,
                 price real,
                 image blob,
                 contact text
@@ -61,8 +64,8 @@ class ProductRepository:
         return result
 
     def save(self, product):
-        sql = """insert into products (id,name,description,image,price,contact) values (
-            :id, :name, :description, :image, :price, :contact
+        sql = """insert into products (id,name,description,features,image,price,contact) values (
+            :id, :name, :description, :features, :image, :price, :contact
         ) """
         conn = self.create_conn()
         cursor = conn.cursor()
