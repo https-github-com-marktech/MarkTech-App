@@ -10,7 +10,7 @@ def create_app(repositories):
 
     @app.route("/api/products", methods=["GET"])
     def products_get():
-        all_products = repositories["product"].get_products()
+        all_products = repositories["product"].get_product()
         return object_to_json(all_products)
 
     @app.route("/api/products/<id>", methods=["GET"])
