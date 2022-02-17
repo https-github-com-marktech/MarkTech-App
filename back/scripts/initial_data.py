@@ -1,47 +1,52 @@
-import sys
+def main():
+    import sys
+
+    sys.path.insert(0, "")
+
+    from src.domain.product import Product, ProductRepository
+
+    database_path = "data/product-list.db"
+
+    producto_1 = Product(
+        id="product-1",
+        name="producto queen",
+        description="un tributo a queen",
+        image="https://picsum.photos/200/300",
+        contact=False,
+        price="22:00",
+    )
+    producto_2 = Product(
+        id="Product-2",
+        name="producto iker",
+        description="un tributo a iker",
+        image="https://picsum.photos/200/300",
+        contact=False,
+        price="23:00",
+    )
+    producto_3 = Product(
+        id="Product-3",
+        name="producto camelia",
+        description="un tributo a camelia",
+        image="https://picsum.photos/200/300",
+        contact=False,
+        price="21:00",
+    )
+    producto_4 = Product(
+        id="Product-4",
+        name="producto ainara",
+        description="un tributo a ainara",
+        image="https://picsum.photos/200/300",
+        contact=False,
+        price="17:00",
+    )
+    product_repository = ProductRepository(database_path)
+    product_repository.save(producto_1)
+    product_repository.save(producto_2)
+    product_repository.save(producto_3)
+    product_repository.save(producto_4)
 
 
-sys.path.insert(0, "")
-from src.domain.product import ProductsRepository, Product
+if __name__ == "__main__":
+    main()
 
-database_path = "data/product-list.db"
-
-
-product_tv = Product(
-    id="product-1",
-    name="product queen",
-    description="un tributo a queen",
-    image="una imagen",
-    contact="52665165161",
-    price=65.55,
-)
-product_screen = Product(
-    id="product-2",
-    name="product queen",
-    description="un tributo a queen",
-    image="una imagen",
-    contact="52665165161",
-    price=65.55,
-)
-product_laptop = Product(
-    id="product-3",
-    name="product queen",
-    description="un tributo a queen",
-    image="una imagen",
-    contact="52665165161",
-    price=65.55,
-)
-product_ram = Product(
-    id="product-4",
-    name="product queen",
-    description="un tributo a queen",
-    image="una imagen",
-    contact="52665165161",
-    price=65.55,
-)
-
-product_repository = ProductsRepository(database_path)
-product_repository.save(product_screen)
-product_repository.save(product_laptop)
-product_repository.save(product_ram)
-product_repository.save(product_tv)
+  
