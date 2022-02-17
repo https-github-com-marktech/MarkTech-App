@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35253840-4c17-41ab-b20b-93883e1203b4" name="Changes" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/src/components/CreateAd/CreateForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+>>>>>>> d707eb2e47b6fc5e7ec07c4c14a0907c4f149db4
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +50,11 @@
       <updated>1645024924908</updated>
       <workItem from="1645024926568" duration="2102000" />
       <workItem from="1645027093400" duration="13912000" />
+<<<<<<< HEAD
       <workItem from="1645043670038" duration="10116000" />
+=======
+      <workItem from="1645043670038" duration="6409000" />
+>>>>>>> d707eb2e47b6fc5e7ec07c4c14a0907c4f149db4
     </task>
     <servers />
   </component>

@@ -1,4 +1,4 @@
-import { Routes, Route,BrowserRouter } from "react-router-dom" ;
+/* import { Routes, Route,BrowserRouter } from "react-router-dom" ;
 import React from "react";
 import App from "../App";
 import Showproduct from "../views/Showproduct";
@@ -9,10 +9,10 @@ function Router() {
     return (
     <BrowserRouter> 
       <Routes>
-      <Route path="/" element={<Landing/>} />
+      <Route path="/" element={<AllCategories/>} />
       <Route path="/show/:id" element={<Showproduct/>} />
       </Routes> 
     </BrowserRouter>
 )
 }
-export default Router; 
+export default Router;  */

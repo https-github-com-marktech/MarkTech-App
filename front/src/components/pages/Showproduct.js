@@ -1,16 +1,16 @@
 import "../App.css";
 import { Header } from "../components/Header";
-import Gridproducts from "../components/Startpage/Gridproducts";
 import { Footer } from "../components/Footer";
+import Productcard from "../components/Product/Productcard";
 
-const Landing = () => {
+const Showproduct = () => {
     return (
         <div>
             <Header/>
-            <Gridproducts />
+            <Productcard />
             <Footer />
         </div>
     );
 };
 
-export default Landing;
+export default Showproduct;
