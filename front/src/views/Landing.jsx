@@ -1,12 +1,13 @@
 import "../App.css";
-import { NavBar } from "../components/Header";
+import { Header } from "../components/Header";
+import Gridproducts from "../components/Startpage/Gridproducts";
 import { Footer } from "../components/Footer";
-
 
 const Landing = () => {
     return (
         <div>
-            <NavBar />
+            <Header/>
+            <Gridproducts />
             <Footer />
         </div>
     );
