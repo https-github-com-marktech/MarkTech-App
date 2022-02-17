@@ -27,9 +27,14 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/Profile" component={Profile} />
           <Route path="/Categories" component={Gridproducts} />
+<<<<<<< HEAD
             <Route path="/CreateAd" component={Form} />
             <Route path="/Showproduct" component={Productcard1} />
         </Switch>
+=======
+          <Route path="/Showproduct" component={Productcard1} />
+        </Switch>np
+>>>>>>> 037648a54c8921162bd1b290bd7babe989700916
       </Router>
       <Footer/>
 
