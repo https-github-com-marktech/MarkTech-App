@@ -4,15 +4,19 @@ import './gridproducts.css'
 
 function Cards( props ) {
 return (
-    <div className='card'> 
-        <div className='cardImgBox'>
-            <img className='cardImg' src= {props.product.image}></img>
-        </div>
-        <h3 className='cardTitle'>{props.product.name}</h3>
-        <p>{props.product.description}</p>
-        <p className='cardPrice'>{props.product.price}</p>
-        <button className='cardButton'><a href='/Showproduct'>See more</a></button>
-    </div>
+
+
+<div className='card'> 
+<div className='cardImgBox'>
+<img className='cardImg' src= {props.img}></img>
+</div>
+<h3 className='cardTitle'>{props.nombre}</h3>
+<p>{props.descripcion}</p>
+<p className='cardPrice'>{props.precio}</p>
+<p>{props.solicitudComprador}</p>
+<a href='/Showproduct'><button className='cardButton'>See more</button></a>
+</div>
+
 )
 }
 
