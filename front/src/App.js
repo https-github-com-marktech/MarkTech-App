@@ -6,10 +6,12 @@ import Profile from "./components/pages/Profile";
 import Gridproducts from "./components/Startpage/Gridproducts";
 import Productcard1 from "./components/Product/Productcard1";
 import Home from "./components/pages/Home";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
+
       <Router>
         <Navbar />
         <Switch>
@@ -19,6 +21,7 @@ function App() {
           <Route path="/Showproduct" component={Productcard1} />
         </Switch>
       </Router>
+      <Footer/>
     </div>
   );
 }
