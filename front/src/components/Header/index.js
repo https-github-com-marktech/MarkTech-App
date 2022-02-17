@@ -27,7 +27,7 @@ const Index = () => {
 
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/new'>+ Create ad </NavBtnLink>
+                    <NavBtnLink to='/CreateForm'>+ Create ad </NavBtnLink>
                 </NavBtn>
 
             </Nav>
