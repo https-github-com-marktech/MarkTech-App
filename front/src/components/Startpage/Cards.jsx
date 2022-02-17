@@ -12,9 +12,9 @@ function Cards( props ) {
         </div>
         <h3 className='cardTitle'>{props.nombre}</h3>
         <p>{props.descripcion}</p>
-        <p>{props.precio}</p>
+        <p className='cardPrice'>{props.precio}</p>
         <p>{props.solicitudComprador}</p>
-        <button className='cardButton'><a href='#'>See more</a></button>
+        <button className='cardButton'><a href='/Profile'>See more</a></button>
       </div>
 
   )

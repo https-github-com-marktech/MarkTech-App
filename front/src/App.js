@@ -7,9 +7,6 @@ import Categories from "./components/pages/Categories";
 import Home from "./components/pages/Home";
 import Gridproducts from "./components/Startpage/Gridproducts";
 
-
-
-
 function App() {
   return (
 
@@ -23,11 +20,7 @@ function App() {
         </Switch>
       </Router>
          
-          
       </div>
-
-
-
   );
 }
 

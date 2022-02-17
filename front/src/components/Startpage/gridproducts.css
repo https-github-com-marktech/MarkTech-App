@@ -41,6 +41,11 @@ margin: 50px 0 10px 0;
     height: 200px;
     border-radius: 5px;
 }
+
+.cardPrice{
+    color: red;
+    font-weight: 600;
+}
 .cardBox{
     width: 100%;
     display: flex;
