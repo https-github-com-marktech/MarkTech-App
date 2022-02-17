@@ -15,20 +15,20 @@ function Gridproducts() {
 
   useEffect(() => {
     getAllProducts().then((resp) => setProducts(resp));
-  })
+  }, []);
 
   return (
     <div className='container'>
       <h2 className='titulo'>LAPTOPS</h2>
-        <div className='cardBox'>               
-          {products.map(
-            (product) => (
+      <div className='cardBox'>
+        {products.map(
+          (product) => (
 
-              <Cards product={product} key={product.id}/>
+            <Cards product={product} key={product.id} />
 
-            )
-          )}
-        </div>
+          )
+        )}
+      </div>
     </div>
   )
 }

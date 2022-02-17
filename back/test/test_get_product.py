@@ -22,8 +22,8 @@ def test_should_return_empty_list_of_product():
 def test_should_return_product_in_database():
 
     # ARRANGE
-    products_repository = ProductRepository(temp_file())
-    app = create_app(repositories={"product": products_repository})
+    product_repository = ProductRepository(temp_file())
+    app = create_app(repositories={"product": product_repository})
     client = app.test_client()
 
     producto_1 = Product(
@@ -31,10 +31,10 @@ def test_should_return_product_in_database():
         name="producto queen",
         description="un tributo a queen",
         image="2022-01-25",
-        contact=False,
+        contact="peterrobinson@ggmail.yes",
         price="22:00",
     )
-    products_repository.save(producto_1)
+    product_repository.save(producto_1)
 
     # ACT
     response = client.get("/api/products")
@@ -42,11 +42,11 @@ def test_should_return_product_in_database():
     # ASSERT
     assert response.json == [
         {
-            "id": "event-1",
-            "name": "concierto queen",
+            "id": "product-1",
+            "name": "producto queen",
             "description": "un tributo a queen",
-            "date": "2022-01-25",
-            "completed": False,
-            "time": "22:00:00",
+            "image": "2022-01-25",
+            "contact": "peterrobinson@ggmail.yes",
+            "price": "22:00",
         }
     ]
