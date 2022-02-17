@@ -1,9 +1,10 @@
 import React from "react";
+import './home.css'
 
 const Home = () => {
   return (
-    <div>
-      <h1>Welcome to Marktech </h1>
+    <div className="container">
+      <h1 className="welcome">Welcome to MarkTech </h1>
     </div>
   );
 };

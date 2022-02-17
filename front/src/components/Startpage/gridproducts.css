@@ -1,17 +1,18 @@
-.titulo{
-font-family: 'Fredoka One', cursive;
-margin: 50px 0 10px 0;
-}
-.cardTitle{
-    font-family: 'Montserrat', sans-serif
-}
-
 .container{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap; 
     text-align: center;
+    background-image: url('../images/fondo2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+font-family: 'Fredoka One', cursive;
+margin: 50px 0 10px 0;
 }
 
 .card{
@@ -31,6 +32,15 @@ margin: 50px 0 10px 0;
     color: var(--white);
 
 }
+.cardBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    box-shadow:   0 4px 16px -10px gray;
+
+}
+
 .cardImgBox{
     margin: auto;
     width: 90%;
@@ -42,20 +52,26 @@ margin: 50px 0 10px 0;
     border-radius: 5px;
 }
 
+.cardTitle{
+    font-family: 'Montserrat', sans-serif
+}
+
 .cardPrice{
-    color: red;
     font-weight: 600;
 }
-.cardBox{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; 
-    box-shadow:   0 4px 16px -10px gray;
-
+.cardPrice:hover{
+    color:red;
+    font-size: 1.5rem;
 }
+
+
+.cardDescription{
+    font-weight: 700;
+}
+
 .cardButton{
     background-color: var(--black);
+    color: var(--white);
     border: none;
     font-size: 12px;
     padding: 0.5rem 1rem;
@@ -65,4 +81,11 @@ margin: 50px 0 10px 0;
 .cardButton a{
     text-decoration: none;
     color: var(--white);
+}
+
+
+.cardButton:hover{
+    background-color: var(--white);
+    font-size: 1rem;
+    color: var(--black);
 }
