@@ -3,14 +3,48 @@ def main():
 
     sys.path.insert(0, "")
 
-    from src.domain.info import Info, InfoRepository
+    from src.domain.product import Product, ProductRepository
 
-    database_path = "data/database.db"
+    database_path = "data/product-list.db"
 
-    info_repository = InfoRepository(database_path)
+    producto_1 = Product(
+        id="product-1",
+        name="producto queen",
+        description="un tributo a queen",
+        image="2022-01-25",
+        contact=False,
+        price="22:00",
+    )
+    producto_2 = Product(
+        id="Product-2",
+        name="producto iker",
+        description="un tributo a iker",
+        image="2022-01-26",
+        contact=False,
+        price="23:00",
+    )
+    producto_3 = Product(
+        id="Product-3",
+        name="producto camelia",
+        description="un tributo a camelia",
+        image="2022-01-27",
+        contact=False,
+        price="21:00",
+    )
+    producto_4 = Product(
+        id="Product-4",
+        name="producto ainara",
+        description="un tributo a ainara",
+        image="2022-01-28",
+        contact=False,
+        price="17:00",
+    )
+    product_repository = ProductRepository(database_path)
+    product_repository.save(producto_1)
+    product_repository.save(producto_2)
+    product_repository.save(producto_3)
+    product_repository.save(producto_4)
 
-    info_repository.save(Info(app_name="f5-seed-app"))
 
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
