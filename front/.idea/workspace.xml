@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35253840-4c17-41ab-b20b-93883e1203b4" name="Changes" comment="" />
+    <list default="true" id="35253840-4c17-41ab-b20b-93883e1203b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Startpage/Cards.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Startpage/gridproducts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/Cozy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/Frame 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/Product Thumbnails.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/Product.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/img1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/img2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/img3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/img4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/img5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/images/shopping-cart.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Startpage/Gridproducts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Startpage/Gridproducts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/images/alberto-juarez-cPm8HPRL04w-unsplash.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/images/keyboard.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/images/camera-32871_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/images/camera.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/images/mobile-phone-2198770_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/images/mobile-phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/images/smartphone-4076145_1280.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/images/smartphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Landing.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Landing.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +67,7 @@
       <updated>1645024924908</updated>
       <workItem from="1645024926568" duration="2102000" />
       <workItem from="1645027093400" duration="13912000" />
-      <workItem from="1645043670038" duration="1784000" />
+      <workItem from="1645043670038" duration="3447000" />
     </task>
     <servers />
   </component>

@@ -9,7 +9,7 @@ function Router() {
     return (
     <BrowserRouter> 
       <Routes>
-      <Route path="/" element={<Landing/>} />
+      <Route path="/" element={<AllCategories/>} />
       <Route path="/show/:id" element={<Showproduct/>} />
       </Routes> 
     </BrowserRouter>
