@@ -14,12 +14,12 @@ const Form = () => {
 
 
                         <label htmlFor="">Name</label>
-                        <textarea />
+                    <input type="text"/>
 
 
 
                         <label htmlFor="">Description</label>
-                        <input type="text"/>
+                        <textarea />
 
                         <label htmlFor="">Features
                         </label>
