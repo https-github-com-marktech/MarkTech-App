@@ -1,6 +1,6 @@
-from flask import Flask, request
+from flask import Flask
 from flask_cors import CORS
-from src.domain.product import Product
+
 from src.lib.utils import object_to_json
 
 
@@ -12,7 +12,9 @@ def create_app(repositories):
     def hello_world():
         return "...magic!"
 
-    @app.route("/api/products", methods=["GET"])
-    def events_get():
-        all_products = repositories["product"].get_product()
-        return object_to_json(all_products)
+    @app.route("/api/info", methods=["GET"])
+    def info_get():
+        info = repositories["info"].get_info()
+        return object_to_json(info)
+
+    return app

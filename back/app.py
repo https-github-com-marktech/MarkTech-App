@@ -1,12 +1,12 @@
 import sqlite3
 from src.webserver import create_app
-from src.domain.product import ProductsRepository
+from src.domain.info import InfoRepository
 
 
-database_path = "data/product-list.db"
+database_path = "data/database.db"
 
 repositories = {
-    "product": ProductsRepository(database_path),
+    "info": InfoRepository(database_path),
 }
 
 app = create_app(repositories)
