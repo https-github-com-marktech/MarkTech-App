@@ -1,7 +1,6 @@
 import React from 'react'
 import './gridproducts.css'
 import Cards from './Cards'
-<<<<<<< HEAD
 // import Laptop from '../images/laptop-33521_1280.png'
 // import Apple from '../images/apple.jpg'
 // import Laptop1 from '../images/laptop1.jpg'
@@ -14,7 +13,7 @@ import { getProductId } from "../../service/productService";
 // import { getAllProducts } from '../../service/productService';
 
 
-export function Gridproducts() {
+function Gridproducts() {
 
   const { id } = useParams()
   const [products, setProducts] = useState([])
@@ -37,31 +36,10 @@ export function Gridproducts() {
   );
 };
 
+export default Gridproducts
 
 /* 
 const [products, setProducts] = useState([]);
-=======
-import Laptop from '../images/laptop-33521_1280.png'
-import Apple from '../images/apple.jpg'
-import Laptop1 from '../images/laptop1.jpg'
-import Cellphone from '../images/mobile-phone.png'
-import Keyboard from '../images/keyboard.jpg'
-import Cameras from '../images/camera.png'
-
-
-function Gridproducts() {
-  return (
-
-    <div className='container'>
-      <h2 className='titulo'>LAPTOPS</h2>
-      <div className='cardBox'>
-
-        <Cards img={Laptop} nombre='Asus Computer '
-          descripcion='New' precio='$1200'
-          solicitudComprador='Contacto vía: email' />
-      </div>
-    </div>
->>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9
 
   useEffect(() => {
       getAllProducts().then((resp) => setProducts(resp));
@@ -72,7 +50,6 @@ function Gridproducts() {
 <div className='container'>
       <h2 className='titulo'>LAPTOPS</h2>
       <div className='cardBox'>
-<<<<<<< HEAD
 
         <Cards img={Laptop} nombre='Asus Computer '
           descripcion='New' precio='$1200'
@@ -80,18 +57,3 @@ function Gridproducts() {
           
       </div>
     </div> */
-=======
-        {products.map(
-          (product) => (
-
-            <Cards product={product} key={product.id} />
-
-          )
-        )}
-      </div>
-    </div>
-  )
-}
-
-export default Gridproducts
->>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9

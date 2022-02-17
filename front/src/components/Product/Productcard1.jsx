@@ -4,11 +4,7 @@ import Productcard from './Productcard'
 import Laptop1 from '../images/laptop1.jpg'
 
 
-<<<<<<< HEAD
-export function Productcard1() {
-=======
 function Productcard1() {
->>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9
   return (
 
       <div className='container'>
@@ -25,7 +21,6 @@ function Productcard1() {
   )
 }
 
-<<<<<<< HEAD
 export default Productcard1
 
 
@@ -47,6 +42,3 @@ export function Productcard(props) {
 
 export default Productcard
  */
-=======
-export default Productcard1
->>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9

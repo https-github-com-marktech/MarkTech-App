@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 /* import "./product.module.css";
 // import Laptop from '../images/laptop-33521_1280.png'
-=======
-import "./product.module.css";
-import Laptop from '../images/laptop-33521_1280.png'
->>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9
 
 function Productcard(props) {
   return (
@@ -12,11 +7,7 @@ function Productcard(props) {
     <div className="container">
       <div className='card'>
         <div className='cardImgBox'>
-<<<<<<< HEAD
         <img className='cardImg' src= {props.img} alt={props.name}></img>
-=======
-          <img className='cardImg' src={props.img}></img>
->>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9
         </div>
         <h3 className='cardTitle'>{props.nombre}</h3>
         <p className="cardDescription">{props.descripcion}</p>
