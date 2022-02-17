@@ -1,0 +1,23 @@
+.welcome{
+    font-size: 3.5rem;
+    height: 200px;
+    animation: ease-in-out 2s ;
+
+}
+
+ 
+
+
+@media (min-width: 768px){
+    .welcome{
+        font-size: 5rem;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .welcome{
+        font-size: 7rem;
+    }
+
+}
