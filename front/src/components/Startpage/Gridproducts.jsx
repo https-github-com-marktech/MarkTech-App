@@ -1,9 +1,86 @@
 import React from 'react'
+import './gridproducts.css'
+import Cards from './Cards'
+import Laptop from '../images/laptop-33521_1280.png'
+import Cellphone from '../images/mobile-phone.png'
+import Keyboard from '../images/keyboard.jpg'
+import Cameras from '../images/camera.png'
 
-function hola() {
+
+function Gridproducts() {
   return (
-    <div>Startpage</div>
+
+      <div className='container'>
+         <h2 className='titulo'>LAPTOPS</h2>
+          <div className='cardBox'>               
+     
+      <Cards  img={Laptop} nombre='Laptop'  
+      descripcion='blablabla' precio='$1500'
+       solicitudComprador='acfsdfsd'  />
+
+    <Cards  img={Laptop} nombre='Laptop'  
+      descripcion='blablabla' precio='$1500'
+       solicitudComprador='acfsdfsd'  />
+
+
+    <Cards  img={Laptop} nombre='Laptop'  
+      descripcion='blablabla' precio='$1500'
+       solicitudComprador='acfsdfsd'  />
+
+              </div>
+
+              
+              <h2 className='titulo'>CELLPHONES</h2>
+          <div className='cardBox'>               
+     
+          <Cards  img={Cellphone} nombre='Cellphone'  
+      descripcion='blablablasacdsadf' precio='$2500'
+       solicitudComprador='hihihih'  />
+
+
+    <Cards  img={Cellphone} nombre='Cellphone'  
+      descripcion='blablablasacdsadf' precio='$2500'
+       solicitudComprador='hihihih'  />
+
+  <Cards img={Cellphone} nombre='Cellphone'  
+      descripcion='blablablasacdsadf' precio='$2500'
+       solicitudComprador='hihihih'  />
+
+              </div>
+
+              <h2 className='titulo'>CAMERAS</h2>
+          <div className='cardBox'>               
+     
+      <Cards  img={Cameras} nombre='Cameras'  
+      descripcion='blablabla' precio='$3500'
+       solicitudComprador='acfsdfsd'  />
+
+ <Cards  img={Cameras} nombre='Cameras'  
+      descripcion='blablabla' precio='$3500'
+       solicitudComprador='acfsdfsd'  />
+
+      <Cards  img={Cameras} nombre='Cameras'  
+      descripcion='blablabla' precio='$3500'
+       solicitudComprador='acfsdfsd'  />
+              </div>
+
+              <h2 className='titulo'>KEYBOARDS</h2>
+          <div className='cardBox'>               
+     
+          <Cards img={Keyboard} nombre='keyboard'  
+      descripcion='psappapapa' precio='$500'
+       solicitudComprador='ecdlld'  />
+
+    <Cards img={Keyboard} nombre='keyboard'  
+      descripcion='psappapapa' precio='$500'
+       solicitudComprador='ecdlld'  />
+
+    <Cards img={Keyboard} nombre='keyboard'  
+      descripcion='psappapapa' precio='$500'
+       solicitudComprador='ecdlld'  />
+              </div>
+       </div>
   )
 }
 
-export default hola
+export default Gridproducts

@@ -1,0 +1,63 @@
+.titulo{
+font-family: 'Fredoka One', cursive;
+margin: 50px 0 10px 0;
+}
+.cardTitle{
+    font-family: 'Montserrat', sans-serif
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+.card{
+    width: 250px;
+    padding: 20px;
+    height: auto;
+    margin: 3%;
+    border-radius: 2%;
+    box-shadow: 1px 1px 10px gray;
+    cursor: pointer;
+    background-color: var(--white);
+   
+}
+.card:hover{
+    background-color: var(--blueDark);
+    opacity: 0.9;
+    color: var(--white);
+
+}
+.cardImgBox{
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+.cardImg{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+.cardBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    box-shadow:   0 4px 16px -10px gray;
+
+}
+.cardButton{
+    background-color: var(--black);
+    border: none;
+    font-size: 12px;
+    padding: 0.5rem 1rem;
+    border-radius: 15%;
+}
+
+.cardButton a{
+    text-decoration: none;
+    color: var(--white);
+}

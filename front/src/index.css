@@ -5,6 +5,7 @@
   --blue2: #2597f4;
   --blueDark: #0026e9;
   --bluePurple: #3b38ff;
+  --bluePurpleTransparency:rgb(59, 56, 255,0.5)
   --blueGreen: #25f4e9;
   --transparent:rgba(212, 177, 177, 0);
   }
