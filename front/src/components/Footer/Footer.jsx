@@ -1,5 +1,9 @@
 import React from 'react'
 import './footer.css'
+import Facebook from '../images/facebook.png'
+import Instagram from '../images/instagram.png'
+import Whatsapp from '../images/whatsapp.png'
+import { FaWhatsapp } from 'react-icons/fa'
 
 function Footer() {
   return (
@@ -31,6 +35,9 @@ function Footer() {
             <div className='Social'>
               <h4>Follow us  </h4>
                 <div className='social-links' >
+                <a  href='https://www.facebook.com/' ><img className='redes' alt="facebook" src= {Facebook}/></a>
+                <a  href='https://www.instagram.com/' ><img className='redes' alt="instagram" src= {Instagram}/></a>
+                <a  href='https://web.whatsapp.com//' ><img className='redes' alt="whatsapp" src= {Whatsapp}/></a>
                 </div>
             </div>
           </div>
