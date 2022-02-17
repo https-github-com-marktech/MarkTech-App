@@ -67,6 +67,7 @@ class ProductRepository:
         conn = self.create_conn()
         cursor = conn.cursor()
         cursor.execute(sql, product.to_dict())
+        conn.commit()
 
     def get_products_by_id(self, id):
         sql = """select * from products where id=:id"""
@@ -77,5 +78,3 @@ class ProductRepository:
         data = cursor.fetchone()
         product = Product(**data)
         return product
-
-        conn.commit()
