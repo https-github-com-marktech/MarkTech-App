@@ -1,21 +1,21 @@
-.container{
+.bcontainer{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap; 
     text-align: center;
-    background-image: url('../images/fondo2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-color: red;
 }
 
-.titulo{
+.btitulo{
 font-family: 'Fredoka One', cursive;
 margin: 50px 0 10px 0;
+background-color: red;
 }
 
-.card{
+.bcard{
     width: 250px;
     padding: 20px;
     height: auto;
@@ -23,69 +23,50 @@ margin: 50px 0 10px 0;
     border-radius: 2%;
     box-shadow: 1px 1px 10px gray;
     cursor: pointer;
-    background-color: var(--white);
-   
+    
 }
-.card:hover{
+.bcard:hover{
     background-color: var(--blueDark);
     opacity: 0.9;
     color: var(--white);
+    background-color: red;
+
 
 }
-.cardBox{
-    width: 100%;
+.bCardBox{
+    width: 10%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap; 
     box-shadow:   0 4px 16px -10px gray;
+    background-color: red;
+
 
 }
 
-.cardImgBox{
+.bCardImgBox{
     margin: auto;
     width: 90%;
     height: auto;
+    background-color: red;
+
 }
-.cardImg{
-    width: 100%;
+.bcardImg img{
+    width: 100px;
     height: 200px;
     border-radius: 5px;
 }
 
-.cardTitle{
-    font-family: 'Montserrat', sans-serif
+.bcardTitle{
+    font-family: 'Montserrat', sans-serif;
+
+
 }
 
-.cardPrice{
+.bcardPrice{
     font-weight: 600;
 }
-.cardPrice:hover{
+.bcardPrice:hover{
     color:red;
     font-size: 1.5rem;
-}
-
-
-.cardDescription{
-    font-weight: 700;
-}
-
-.cardButton{
-    background-color: var(--black);
-    color: var(--white);
-    border: none;
-    font-size: 12px;
-    padding: 0.5rem 1rem;
-    border-radius: 15%;
-}
-
-.cardButton a{
-    text-decoration: none;
-    color: var(--white);
-}
-
-
-.cardButton:hover{
-    background-color: var(--white);
-    font-size: 1rem;
-    color: var(--black);
 }

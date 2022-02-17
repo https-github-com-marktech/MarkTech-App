@@ -2,6 +2,8 @@ import React from 'react'
 import './gridproducts.css'
 import Cards from './Cards'
 import Laptop from '../images/laptop-33521_1280.png'
+import Apple from '../images/apple.jpg'
+import Laptop1 from '../images/laptop1.jpg'
 import Cellphone from '../images/mobile-phone.png'
 import Keyboard from '../images/keyboard.jpg'
 import Cameras from '../images/camera.png'
@@ -14,18 +16,18 @@ function Gridproducts() {
          <h2 className='titulo'>LAPTOPS</h2>
           <div className='cardBox'>               
      
-      <Cards  img={Laptop} nombre='Laptop'  
-      descripcion='blablabla' precio='$1500'
-       solicitudComprador='acfsdfsd'  />
+      <Cards  img={Laptop} nombre='Asus Computer '  
+      descripcion='New' precio='$1200'
+       solicitudComprador='Contacto vía: email'  />
 
-    <Cards  img={Laptop} nombre='Laptop'  
-      descripcion='blablabla' precio='$1500'
-       solicitudComprador='acfsdfsd'  />
+    <Cards  img={Apple} nombre='Apple Computer'  
+      descripcion='Second Hand' precio='$2700'
+       solicitudComprador='email, telephone'  />
 
 
-    <Cards  img={Laptop} nombre='Laptop'  
-      descripcion='blablabla' precio='$1500'
-       solicitudComprador='acfsdfsd'  />
+    <Cards  img={Laptop1} nombre='Acer Computer'  
+      descripcion='Second Hand' precio='$1100'
+       solicitudComprador='email'  />
 
               </div>
 
