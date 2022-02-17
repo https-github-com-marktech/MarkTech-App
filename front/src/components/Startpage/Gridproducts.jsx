@@ -1,6 +1,7 @@
 import React from 'react'
 import './gridproducts.css'
 import Cards from './Cards'
+<<<<<<< HEAD
 // import Laptop from '../images/laptop-33521_1280.png'
 // import Apple from '../images/apple.jpg'
 // import Laptop1 from '../images/laptop1.jpg'
@@ -39,16 +40,39 @@ export function Gridproducts() {
 
 /* 
 const [products, setProducts] = useState([]);
+=======
+import Laptop from '../images/laptop-33521_1280.png'
+import Apple from '../images/apple.jpg'
+import Laptop1 from '../images/laptop1.jpg'
+import Cellphone from '../images/mobile-phone.png'
+import Keyboard from '../images/keyboard.jpg'
+import Cameras from '../images/camera.png'
+
+
+function Gridproducts() {
+  return (
+
+    <div className='container'>
+      <h2 className='titulo'>LAPTOPS</h2>
+      <div className='cardBox'>
+
+        <Cards img={Laptop} nombre='Asus Computer '
+          descripcion='New' precio='$1200'
+          solicitudComprador='Contacto vía: email' />
+      </div>
+    </div>
+>>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9
 
   useEffect(() => {
-    getAllProducts().then((resp) => setProducts(resp));
-  })
+      getAllProducts().then((resp) => setProducts(resp));
+    }, []);
 
     getCardById(id).then((resp) => setProducts (resp));
 
 <div className='container'>
       <h2 className='titulo'>LAPTOPS</h2>
       <div className='cardBox'>
+<<<<<<< HEAD
 
         <Cards img={Laptop} nombre='Asus Computer '
           descripcion='New' precio='$1200'
@@ -56,3 +80,18 @@ const [products, setProducts] = useState([]);
           
       </div>
     </div> */
+=======
+        {products.map(
+          (product) => (
+
+            <Cards product={product} key={product.id} />
+
+          )
+        )}
+      </div>
+    </div>
+  )
+}
+
+export default Gridproducts
+>>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9

@@ -18,7 +18,11 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/Profile" component={Profile} />
           <Route path="/Categories" component={Gridproducts} />
+<<<<<<< HEAD
           <Route path="/Showproduct/{id}" component={Productcard1} />
+=======
+          <Route path="/Showproduct" component={Productcard1} />
+>>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9
         </Switch>
       </Router>
       <Footer/>

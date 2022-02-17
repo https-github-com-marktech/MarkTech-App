@@ -3,6 +3,7 @@ import './gridproducts.css'
 import {Link} from 'react-router-dom';
 
 function Cards( props ) {
+<<<<<<< HEAD
     return (
         <div className='card'> 
             <div className='cardImgBox'>
@@ -18,3 +19,23 @@ function Cards( props ) {
     
     export default Cards
     
+=======
+return (
+
+
+<div className='card'> 
+<div className='cardImgBox'>
+<img className='cardImg' src= {props.img}></img>
+</div>
+<h3 className='cardTitle'>{props.nombre}</h3>
+<p>{props.descripcion}</p>
+<p className='cardPrice'>{props.precio}</p>
+<p>{props.solicitudComprador}</p>
+<a href='/Showproduct'><button className='cardButton'>See more</button></a>
+</div>
+
+)
+}
+
+export default Cards 
+>>>>>>> 333a001980696d3c5f805fc6ff64497d6b8902c9
