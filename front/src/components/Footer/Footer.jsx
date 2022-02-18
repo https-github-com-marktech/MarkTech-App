@@ -3,7 +3,7 @@ import './footer.css'
 import Facebook from '../images/facebook.png'
 import Instagram from '../images/instagram.png'
 import Whatsapp from '../images/whatsapp.png'
-import { FaWhatsapp } from 'react-icons/fa'
+// import { FaWhatsapp } from 'react-icons/fa'
 
 function Footer() {
   return (

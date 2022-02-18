@@ -8,7 +8,7 @@ return (
 
 <div className='card'> 
 <div className='cardImgBox'>
-<img className='cardImg' src= {props.img}></img>
+<img className='cardImg' src= {props.img} alt={props.nombre}></img>
 </div>
 <h3 className='cardTitle'>{props.nombre}</h3>
 <p>{props.descripcion}</p>
