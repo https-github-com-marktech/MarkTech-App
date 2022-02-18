@@ -1,5 +1,4 @@
 import React from 'react'
-import './product.module.css'
 // import Productcard from './Productcard'
 // import Laptop1 from '../images/laptop1.jpg'
 // import "../Product/product.module.css";

@@ -1,5 +1,3 @@
-import "./product.module.css";
-import "../Product/product.module.css";
 // import Laptop from '../images/laptop-33521_1280.png'
 /* import { useParams } from "react-router-dom";
  */// import { getProductId } from "../../service/productService";

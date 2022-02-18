@@ -7,6 +7,8 @@ import {
     NavBtn,
     NavBtnLink,
 } from './NavbarElements';
+// import {Route} from "react-router-dom";
+// import Form from "../Form";
 
 const Index = () => {
     return (
@@ -17,7 +19,7 @@ const Index = () => {
                 <NavMenu>
 
                     <NavLink to='/categories' activeStyle>
-                        <img className="logo_transparente" src="assets/logo.png" />
+                        <img className="logo_transparente" src="assets/logo.png" alt="logo"/>
 
                         All Categories
                     </NavLink>
@@ -27,7 +29,8 @@ const Index = () => {
 
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/new'>+ Create ad </NavBtnLink>
+                    <NavBtnLink to='/createAd'>+ Create Ad </NavBtnLink>
+
                 </NavBtn>
 
             </Nav>

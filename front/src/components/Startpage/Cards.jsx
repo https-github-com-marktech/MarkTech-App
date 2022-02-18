@@ -2,8 +2,8 @@ import React from 'react'
 import './gridproducts.css'
 import {Link} from 'react-router-dom';
 // import getProductId from './service/productService'
-import { getProductId } from "../../service/productService";
-import Productcard1 from '../Product/Productcard1'
+// import { getProductId } from "../../service/productService";
+// import Productcard1 from '../Product/Productcard1'
 /* import { useParams } from "react-router-dom";
  */
 function Cards( props ) {
@@ -16,10 +16,7 @@ function Cards( props ) {
             <h3 className='cardTitle'>{props.product.name}</h3>
             <p>{props.product.description}</p>
             <p className='cardPrice'>$ {props.product.price}</p>
-            <button type="button" onClick={getProductId} component={Productcard1}>
-            More info 
-            </button>
-           <Link to={`/Showproduct/${props.product.id}`} className='cardButton'>See more</Link>
+            <Link to={`/Showproduct/${props.product.id}` } className='cardButton'>See more</Link>
         </div>
     )
 }
